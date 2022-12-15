@@ -62,7 +62,10 @@ etkili bir yöntemdir. PCA’nın arkasında yatan temel mantık çok boyutlu bi
 
 ![sad](https://user-images.githubusercontent.com/72496488/207951825-34be4de2-a7ad-4b88-b161-6c5ae83f837c.PNG)
 
+#KAYNAKÇA
 
+https://medium.com/data-science-tr/makine-%C3%B6%C4%9Frenmesi-dersleri-boyut-azaltma-pca-5ae9e902ef92
+https://medium.com/@gulcanogundur/pca-principal-component-analysis-temel-bile%C5%9Fenler-analizi-bf9098751c62#:~:text=T%C3%BCrk%C3%A7esi%20%E2%80%9CTemel%20Bile%C5%9Fenler%20Analizi%E2%80%9D%20olan,indirgemeyi%20sa%C4%9Flamak%20olan%20bir%20tekniktir.
 
 
 
