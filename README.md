@@ -25,6 +25,7 @@ olabilir.Ülkelerin sahip olduğu değişkenlerden bazıları (wiki): resmi dil,
 (toplam), su oranı, nüfus, nüfus yoğunluğu, GSYH, para birimi, trafik akışı, hukuk, dış 
 ilişkiler, din, eğitim, sağlık, sanayi, tarım, turizm… Bunlara ek olarak ülkeden ülkeye 
 değişen yüzlerce değişken sıralayabiliriz.
+
 ![thumbs_b_c_e36b48579f43bc734835288303fd38f6](https://user-images.githubusercontent.com/72496488/207949761-c6be79bf-6373-49c9-bc9a-d38d10aefa90.jpg)
 
 # PCA Metodu
