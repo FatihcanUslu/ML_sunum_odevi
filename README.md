@@ -6,8 +6,7 @@ Boyut azatma bu sorunun önüne geçmek için kullanılan yöntemlerden biridir.
 setinde bazı öznitelikler arasında yüksek korelasyon oluyor ve bu bizim gereksiz bilgiye sahip 
 olmamıza ve modelimizde overfitting problemine sebep olabiliyor.
 
-![cubukgrafik](https://user-images.githubusercontent.com/72496488/207949307-a88f6551-b911-48f8-be92-dea782d9a75e.png)
-
+![3d-boyutsal-küçültmenin-etkisi-2dye-etkisi](https://user-images.githubusercontent.com/72496488/207951049-df1d3e7c-ec76-4e1e-a265-c3707cfa1214.jpg)
 
 # Nasıl Uygulanır ?
 
@@ -18,15 +17,31 @@ maksimum varyansını-bilgisini tutan minimum sayıda değişken oluşturuyoruz.
 örnek için aynı değere sahip ise gereksiz bir değişkendir. Biz en yüksek varyansa sahip olan 
 değişkenleri bulmalıyız.
 
+![Ekran Alıntısı](https://user-images.githubusercontent.com/72496488/207951177-5e34ab8b-9ea4-4af7-b797-ed3f21803e72.PNG)
+
+
 # HDI(İnsani Kalkınma Endeksi)
 
-Buna en güzel örneklerden biri HDI(İnsani Kalkınma Endeksi) hesaplaması 
+ Buna en güzel örneklerden biri HDI(İnsani Kalkınma Endeksi) hesaplaması 
 olabilir.Ülkelerin sahip olduğu değişkenlerden bazıları (wiki): resmi dil, yüz ölçümü 
 (toplam), su oranı, nüfus, nüfus yoğunluğu, GSYH, para birimi, trafik akışı, hukuk, dış 
 ilişkiler, din, eğitim, sağlık, sanayi, tarım, turizm… Bunlara ek olarak ülkeden ülkeye 
 değişen yüzlerce değişken sıralayabiliriz.
 
-![thumbs_b_c_e36b48579f43bc734835288303fd38f6](https://user-images.githubusercontent.com/72496488/207949761-c6be79bf-6373-49c9-bc9a-d38d10aefa90.jpg)
+# HDI(İnsani Kalkınma Endeksi)
+
+• PCA metodu sanayi, tarım, turizm vs. ekonomiyle ilgili yüzlerce değişkeni ve nüfusu kullanıp kişi 
+başına düşen gayri safi milli gelir diye tek bir değişken oluşturuyor. Yani yüzlerce boyutluk bilgi en az 
+bilgi kaybıyla tek boyutta tutulmuş oluyor.
+•HDI hesaplamalarında sadece 5 özniteliğe bakılarak pek de itiraz edilmeyecek bir tablo karşımıza 
+çıkıyor.
+• Kişi başına düşen gayri safi milli gelir
+• İnsan gelişmişlik endeksi — HDI sıralaması
+• Beklenen ortalama yaşam süresi
+• Beklenen eğitim yılı
+• Ortalama eğitim yılı
+
+![sadsa](https://user-images.githubusercontent.com/72496488/207951519-3445d2a1-c1d8-420d-ae83-23527831d664.PNG)
 
 # PCA Metodu
 
@@ -34,9 +49,18 @@ Boyut azaltma işlemlerinde sıklıkla kullanılan PCA verideki gerekli bilgiler
 etkili bir yöntemdir. PCA’nın arkasında yatan temel mantık çok boyutlu bir veriyi, verideki temel 
 özellikleri yakalayarak daha az sayıda değişkenle göstermektir. En iyi sonucu elde etmek için genelde 
 öncelikle standardizasyon yapılır.
+ x = StandardScaler().fit_transform(x)
 
+![asdads](https://user-images.githubusercontent.com/72496488/207951693-fd6f0c85-6a3c-42be-ae3e-d9e7406fbbd1.PNG)
 
+# PCA Metodu
+• Sonrasında PCA uygulanılır.
+• from sklearn.decomposition import PCA
+• pca = PCA(n_components=2)
+• principalComponents = pca.fit_transform(x)
+• principalDf = pd.DataFrame(data = principalComponents, columns = ['principal component 1', 'principal component 2'])
 
+![sad](https://user-images.githubusercontent.com/72496488/207951825-34be4de2-a7ad-4b88-b161-6c5ae83f837c.PNG)
 
 
 
